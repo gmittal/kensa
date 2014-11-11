@@ -9,8 +9,8 @@ var app = express();
 app.use(bodyParser());
 
 
-var accountSid = 'xxxxxxx';
-var authToken = "xxxxxxxx";
+var accountSid = 'ACc7eeb233067530c7834796d06edbb5ec';
+var authToken = "5fed0003a66309453cd403e5693608fe";
 var client = require('twilio')(accountSid, authToken);
 
 
