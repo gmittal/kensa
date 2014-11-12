@@ -1,3 +1,5 @@
+// For deployment, host on a server and set the route to the webhook in Twilio's messaging settings. Simply send an MMS to that number with the desired QR code and the system should reply back with the decoded response.
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
