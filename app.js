@@ -1,5 +1,7 @@
 // For deployment, host on a server and set the route to the webhook in Twilio's messaging settings. Simply send an MMS to that number with the desired QR code and the system should reply back with the decoded response.
 
+var dotenv = require('dotenv');
+dotenv.load();
 var express = require('express');
 var bodyParser = require('body-parser');
 var request = require('request');
@@ -11,10 +13,7 @@ var app = express();
 
 app.use(bodyParser());
 
-
-var accountSid = 'xxxxxx';
-var authToken = "xxxxxx";
-var client = require('twilio')(accountSid, authToken);
+var client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
 var responseNumber = "+16503004931";
 
