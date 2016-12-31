@@ -1,6 +1,6 @@
-Scan and Generate QR Codes via MMS
+Kensa
 ===========
-Simple QR code scanner/generator using MMS. Built with Twilio.
+Scan and generate QR codes through SMS/MMS messages.
 
 ### Setup
 Install server dependencies.
